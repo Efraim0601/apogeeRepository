@@ -28,6 +28,7 @@ under the License.
 </#if>
 <center>
   <div class="screenlet login-screenlet">
+    <div><img  style="width: 150px; aspect-ratio:strech" src="/rainbowstone/images/ofbiz_logo.svg" alt="logo" ></div>
     <div class="screenlet-title-bar">
       <h3>${uiLabelMap.CommonRegistered}</h3>
     </div>

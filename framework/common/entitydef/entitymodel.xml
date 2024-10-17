@@ -23,7 +23,7 @@ under the License.
   <!-- ========================================================= -->
   <!-- ======================== Defaults ======================= -->
   <!-- ========================================================= -->
-    <title>Entity of an Apache OFBiz Component</title>
+    <title>Entity of an Apache APOGEE Component</title>
     <description>None</description>
     <version>1.0</version>
 

@@ -26,6 +26,10 @@ under the License.
 <#else>
   <#assign focusName = true>
 </#if>
+  <div class="center-login" style="align-item:center; justify-content:center">
+  <img  style="width: 150px; aspect-ratio:strech" src="/helveticus/images/ofbiz_logo.svg" alt="logo" >
+  </div>
+
   <div class="screenlet login-screenlet">
     <h3>${uiLabelMap.CommonBeLogged}</h3>
     <div class="screenlet-body">

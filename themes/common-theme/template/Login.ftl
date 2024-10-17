@@ -28,6 +28,7 @@ under the License.
 </#if>
 <center>
   <div class="screenlet login-screenlet">
+  <span>Hello people</span>
     <div class="screenlet-title-bar">
       <h3>${uiLabelMap.CommonRegistered}</h3>
     </div>

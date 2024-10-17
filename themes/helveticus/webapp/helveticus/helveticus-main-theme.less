@@ -587,6 +587,14 @@ a.buttontext{
 /* ----------------------------------- */
 /*      Screenlet  Style      */
 /* ----------------------------------- */
+
+.center-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .screenlet {
   border-radius: 0.5rem;
   box-shadow: 2px 2px 10px #d1d1d1;
@@ -1013,6 +1021,7 @@ span.tooltip{
     th{
       font-weight: 600;
       text-align: left;
+      margin-bottom: 2px;
     }
     &.header-row{
       font-weight: 600;
@@ -1131,6 +1140,7 @@ form .basic-table,
   width: 100%;
 }
 .basic-form table {
+  gap : 1;
   width: auto;
   tr {
     >td {
@@ -1346,7 +1356,7 @@ form .basic-table,
 
 .login-screenlet{
   padding:5rem;
-  width: 400px;
+  max-width: 400px;
   margin:0 auto;
   box-shadow: 0 0 15px 15px @shadow-color !important;
   background-color: white;
@@ -1453,7 +1463,7 @@ form .basic-table,
 
 .login-screenlet{
   padding:5rem;
-  width: 400px;
+  max-width: 500px;
   margin:0 auto;
   box-shadow: 0 0 15px 15px @shadow-color !important;
   background-color: white;
@@ -1479,6 +1489,7 @@ form .basic-table,
       display: flex;
       flex-direction: column;
       gap:1rem;
+
       a{
         width:100%;
         display:inline-block;
