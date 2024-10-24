@@ -143,9 +143,9 @@ under the License.
     <Party partyId="DemoCustAgent"/>
     <Party partyId="DemoCustomer2"/>
     <ProductStore productStoreId="9000"/>
-    <CustRequest custRequestId="9000" custRequestDate="2008-07-28 09:45:31.928" custRequestTypeId="RF_SUPPORT" statusId="CRQ_SUBMITTED" fromPartyId="DemoCustomer" priority="9" custRequestName="Customer Request Usage" description="Could you please advise us how to use the customer request facility within ofbiz?" productStoreId="9000" createdDate="2008-07-28 11:45:31.928" createdByUserLogin="admin" lastModifiedDate="2008-07-28 11:45:31.928" lastModifiedByUserLogin="admin"/>
+    <CustRequest custRequestId="9000" custRequestDate="2008-07-28 09:45:31.928" custRequestTypeId="RF_SUPPORT" statusId="CRQ_SUBMITTED" fromPartyId="DemoCustomer" priority="9" custRequestName="Customer Request Usage" description="Could you please advise us how to use the customer request facility within APOGEE?" productStoreId="9000" createdDate="2008-07-28 11:45:31.928" createdByUserLogin="admin" lastModifiedDate="2008-07-28 11:45:31.928" lastModifiedByUserLogin="admin"/>
     <CustRequestItem custRequestId="9000" custRequestItemSeqId="00001" story="This can be the longer story of an item on the customer request.This can be the longer story of an item on the customer request.This can be the longer story of an item on the customer request.This can be the longer story of an item on the customer request.This can be the longer story of an item on the customer request.This can be the longer story of an item on the customer request.This can be the longer story of an item on the customer request.This can be the longer story of an item on the customer request.This can be the longer story of an item on the customer request.This can be the longer story of an item on the customer request.This can be the longer story of an item on the customer request."/>
-    <CustRequest custRequestId="9001" custRequestDate="2008-07-21 11:45:31.928" custRequestTypeId="RF_SUPPORT" statusId="CRQ_SUBMITTED" fromPartyId="DemoCustAgent" priority="9" custRequestName="Hardware?" description="Please provide us with the hardware requirements of OFBiz" productStoreId="9000" createdDate="2008-07-28 11:45:31.928" createdByUserLogin="admin" lastModifiedDate="2008-07-28 11:45:31.928" lastModifiedByUserLogin="admin"/>
+    <CustRequest custRequestId="9001" custRequestDate="2008-07-21 11:45:31.928" custRequestTypeId="RF_SUPPORT" statusId="CRQ_SUBMITTED" fromPartyId="DemoCustAgent" priority="9" custRequestName="Hardware?" description="Please provide us with the hardware requirements of APOGEE" productStoreId="9000" createdDate="2008-07-28 11:45:31.928" createdByUserLogin="admin" lastModifiedDate="2008-07-28 11:45:31.928" lastModifiedByUserLogin="admin"/>
     <CustRequest custRequestId="9002" custRequestDate="2008-07-19 18:45:31.928" custRequestTypeId="RF_SUPPORT" statusId="CRQ_SUBMITTED" fromPartyId="DemoCustomer2" priority="9" custRequestName="Customer Same company" description="This will contain a request from the same company?" productStoreId="9000" createdDate="2008-07-28 11:45:31.928" createdByUserLogin="admin" lastModifiedDate="2008-07-28 11:45:31.928" lastModifiedByUserLogin="admin"/>
     <!-- Employees assigned to handle these incoming customer requests-->
     <CustRequestType custRequestTypeId="RF_SUPPORT" partyId="Company"/>
@@ -169,7 +169,7 @@ under the License.
 
     <ContactMech contactMechId="9200" contactMechTypeId="POSTAL_ADDRESS"/>
     <ContactMech contactMechId="9201" contactMechTypeId="TELECOM_NUMBER"/>
-    <ContactMech contactMechId="9202" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="9202" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PostalAddress contactMechId="9200" toName="Company XYZ" attnName="ZJAA" address1="2003 Open Blvd" city="Orem" postalCode="84058" countryGeoId="USA" stateProvinceGeoId="UT" geoPointId="9000"/>
     <TelecomNumber contactMechId="9201" areaCode="801" contactNumber="555-5555"/>
     <FacilityContactMech facilityId="WebStoreWarehouse" contactMechId="9200" fromDate="2001-05-13 12:00:00.0"/>
@@ -202,7 +202,7 @@ under the License.
     <FacilityLocation facilityId="StoreWarehouse2" locationSeqId="TLTLTLUL01" locationTypeEnumId="FLT_PICKLOC" areaId="TL" aisleId="TL" sectionId="TL" levelId="UL" positionId="06"/>
 
     <ProductStore productStoreId="9000" storeName="APOGEE E-Commerce Store" companyName="Open For Business" title="Open For Commerce"
-                  subtitle="Part of the Apache OFBiz Family of Open Source Software" payToPartyId="Company" daysToCancelNonPay="30" prorateShipping="Y" prorateTaxes="Y"
+                  subtitle="Part of the Apache APOGEE Family of Open Source Software" payToPartyId="Company" daysToCancelNonPay="30" prorateShipping="Y" prorateTaxes="Y"
                   inventoryFacilityId="WebStoreWarehouse" oneInventoryFacility="Y" checkInventory="Y" reserveInventory="Y" balanceResOnOrderCreation="Y" reserveOrderEnumId="INVRO_FIFO_REC" requireInventory="N"
                   defaultLocaleString="en_US" defaultCurrencyUomId="USD" defaultSalesChannelEnumId="WEB_SALES_CHANNEL" allowPassword="Y" explodeOrderItems="N" retryFailedAuths="Y" reqReturnInventoryReceive="N"
                   headerApprovedStatus="ORDER_APPROVED" itemApprovedStatus="ITEM_APPROVED" digitalItemApprovedStatus="ITEM_APPROVED" headerDeclinedStatus="ORDER_REJECTED"
@@ -251,37 +251,37 @@ under the License.
     <ProductStorePaymentSetting productStoreId="9000" paymentMethodTypeId="EXT_COD" paymentServiceTypeEnumId="PRDS_PAY_EXTERNAL"/>
     <ProductStorePaymentSetting productStoreId="9000" paymentMethodTypeId="EXT_BILLACT" paymentServiceTypeEnumId="PRDS_PAY_EXTERNAL"/>
 
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_CONFIRM" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderConfirmNotice" xslfoAttachScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderConfirmNoticePdf" subject="OFBiz Demo - Order Confirmation #${orderId}" bccAddress="ofbiztest@example.com" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_COMPLETE" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderCompleteNotice" subject="OFBiz Demo - Your Order Is Complete #${orderId}" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_BACKORDER" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#BackorderNotice" subject="OFBiz Demo - Backorder Notification #${orderId}" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_CHANGE" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderChangeNotice" subject="OFBiz Demo - Order Change Notification #${orderId}" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_PAYRETRY" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#PaymentRetryNotice" subject="OFBiz Demo - Order Payment Notification #${orderId}" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_SHIP_COMPLT" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#ShipmentCompleteNotice" subject="OFBiz Demo - Shipment Complete Notification #${orderId}" fromAddress="ofbiztest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_CONFIRM" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderConfirmNotice" xslfoAttachScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderConfirmNoticePdf" subject="APOGEE Demo - Order Confirmation #${orderId}" bccAddress="APOGEEtest@example.com" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_COMPLETE" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderCompleteNotice" subject="APOGEE Demo - Your Order Is Complete #${orderId}" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_BACKORDER" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#BackorderNotice" subject="APOGEE Demo - Backorder Notification #${orderId}" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_CHANGE" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderChangeNotice" subject="APOGEE Demo - Order Change Notification #${orderId}" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_PAYRETRY" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#PaymentRetryNotice" subject="APOGEE Demo - Order Payment Notification #${orderId}" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_SHIP_COMPLT" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#ShipmentCompleteNotice" subject="APOGEE Demo - Shipment Complete Notification #${orderId}" fromAddress="APOGEEtest@example.com"/>
 
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_RTN_ACCEPT" bodyScreenLocation="component://ecommerce/widget/EmailReturnScreens.xml#ReturnAccept" subject="OFBiz Demo - Return Accepted #${returnHeader.returnId}" xslfoAttachScreenLocation="component://order/widget/ordermgr/OrderPrintScreens.xml#ReturnPDF" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_RTN_COMPLETE" bodyScreenLocation="component://ecommerce/widget/EmailReturnScreens.xml#ReturnComplete" subject="OFBiz Demo - Return Completed #${returnHeader.returnId}" xslfoAttachScreenLocation="component://order/widget/ordermgr/OrderPrintScreens.xml#ReturnPDF" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_RTN_CANCEL" bodyScreenLocation="component://ecommerce/widget/EmailReturnScreens.xml#ReturnCancel" subject="OFBiz Demo - Return Cancelled #${returnHeader.returnId}" xslfoAttachScreenLocation="component://order/widget/ordermgr/OrderPrintScreens.xml#ReturnPDF" fromAddress="ofbiztest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_RTN_ACCEPT" bodyScreenLocation="component://ecommerce/widget/EmailReturnScreens.xml#ReturnAccept" subject="APOGEE Demo - Return Accepted #${returnHeader.returnId}" xslfoAttachScreenLocation="component://order/widget/ordermgr/OrderPrintScreens.xml#ReturnPDF" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_RTN_COMPLETE" bodyScreenLocation="component://ecommerce/widget/EmailReturnScreens.xml#ReturnComplete" subject="APOGEE Demo - Return Completed #${returnHeader.returnId}" xslfoAttachScreenLocation="component://order/widget/ordermgr/OrderPrintScreens.xml#ReturnPDF" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_RTN_CANCEL" bodyScreenLocation="component://ecommerce/widget/EmailReturnScreens.xml#ReturnCancel" subject="APOGEE Demo - Return Cancelled #${returnHeader.returnId}" xslfoAttachScreenLocation="component://order/widget/ordermgr/OrderPrintScreens.xml#ReturnPDF" fromAddress="APOGEEtest@example.com"/>
 
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_GC_PURCHASE" bodyScreenLocation="component://ecommerce/widget/EmailGiftCardScreens.xml#GiftCardPurchase" fromAddress="ofbiztest@example.com" subject="A Gift From ${senderName}!"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_GC_RELOAD" bodyScreenLocation="component://ecommerce/widget/EmailGiftCardScreens.xml#GiftCardReload" fromAddress="ofbiztest@example.com" subject="Gift Card Reload Results"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_GC_PURCHASE" bodyScreenLocation="component://ecommerce/widget/EmailGiftCardScreens.xml#GiftCardPurchase" fromAddress="APOGEEtest@example.com" subject="A Gift From ${senderName}!"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_GC_RELOAD" bodyScreenLocation="component://ecommerce/widget/EmailGiftCardScreens.xml#GiftCardReload" fromAddress="APOGEEtest@example.com" subject="Gift Card Reload Results"/>
 
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_TELL_FRIEND" bodyScreenLocation="component://ecommerce/widget/EmailProductScreens.xml#TellFriend" subject="${sendFrom} has sent you a link!" fromAddress="ofbiztest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_TELL_FRIEND" bodyScreenLocation="component://ecommerce/widget/EmailProductScreens.xml#TellFriend" subject="${sendFrom} has sent you a link!" fromAddress="APOGEEtest@example.com"/>
 
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_PWD_RETRIEVE" bodyScreenLocation="component://securityext/widget/EmailSecurityScreens.xml#PasswordEmail" subject="OFBiz Demo - Password Reminder (${userLogin.userLoginId})" fromAddress="ofbiztest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_PWD_RETRIEVE" bodyScreenLocation="component://securityext/widget/EmailSecurityScreens.xml#PasswordEmail" subject="APOGEE Demo - Password Reminder (${userLogin.userLoginId})" fromAddress="APOGEEtest@example.com"/>
 
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_QUO_CONFIRM" bodyScreenLocation="component://order/widget/ordermgr/QuoteScreens.xml#ViewQuoteSimple" xslfoAttachScreenLocation="component://order/widget/ordermgr/QuoteScreens.xml#QuoteReport" subject="OFBiz Demo - Quote Confirmation #${quoteId}" bccAddress="ofbiztest@example.com" fromAddress="ofbiztest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_QUO_CONFIRM" bodyScreenLocation="component://order/widget/ordermgr/QuoteScreens.xml#ViewQuoteSimple" xslfoAttachScreenLocation="component://order/widget/ordermgr/QuoteScreens.xml#QuoteReport" subject="APOGEE Demo - Quote Confirmation #${quoteId}" bccAddress="APOGEEtest@example.com" fromAddress="APOGEEtest@example.com"/>
 
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PARTY_REGIS_CONFIRM" bodyScreenLocation="component://party/widget/partymgr/EmailPartyScreens.xml#CreatePartyNotification" subject="New Account Created" bccAddress="ofbiztest@example.com" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_CUST_REGISTER" bodyScreenLocation="component://party/widget/partymgr/EmailPartyScreens.xml#CreatePartyNotification" subject="New Account Created" bccAddress="ofbiztest@example.com" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="UPD_PRSNL_INF_CNFRM" bodyScreenLocation="component://party/widget/partymgr/EmailPartyScreens.xml#ChangePersonalInfoNotification" subject="Personal Information Updated" bccAddress="ofbiztest@example.com" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_EMAIL_VERIFY" bodyScreenLocation="component://party/widget/partymgr/EmailPartyScreens.xml#VerifyEmailAddressNotification" subject="Email Address Verification" bccAddress="ofbiztest@example.com" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_CUST_ACTIVATED" bodyScreenLocation="component://party/widget/partymgr/EmailPartyScreens.xml#AccountActivatedNotification" subject="Account Activated" bccAddress="ofbiztest@example.com" fromAddress="ofbiztest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PARTY_REGIS_CONFIRM" bodyScreenLocation="component://party/widget/partymgr/EmailPartyScreens.xml#CreatePartyNotification" subject="New Account Created" bccAddress="APOGEEtest@example.com" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_CUST_REGISTER" bodyScreenLocation="component://party/widget/partymgr/EmailPartyScreens.xml#CreatePartyNotification" subject="New Account Created" bccAddress="APOGEEtest@example.com" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="UPD_PRSNL_INF_CNFRM" bodyScreenLocation="component://party/widget/partymgr/EmailPartyScreens.xml#ChangePersonalInfoNotification" subject="Personal Information Updated" bccAddress="APOGEEtest@example.com" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_EMAIL_VERIFY" bodyScreenLocation="component://party/widget/partymgr/EmailPartyScreens.xml#VerifyEmailAddressNotification" subject="Email Address Verification" bccAddress="APOGEEtest@example.com" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_CUST_ACTIVATED" bodyScreenLocation="component://party/widget/partymgr/EmailPartyScreens.xml#AccountActivatedNotification" subject="Account Activated" bccAddress="APOGEEtest@example.com" fromAddress="APOGEEtest@example.com"/>
 
-    <ProductStoreEmailSetting productStoreId="9000" emailType="CONT_NOTI_EMAIL" bodyScreenLocation="component://ecommerce/widget/EmailContactListScreens.xml#ContactUsEmailNotification" subject="Contact-us Information Notification" fromAddress="ofbiztest@example.com" />
+    <ProductStoreEmailSetting productStoreId="9000" emailType="CONT_NOTI_EMAIL" bodyScreenLocation="component://ecommerce/widget/EmailContactListScreens.xml#ContactUsEmailNotification" subject="Contact-us Information Notification" fromAddress="APOGEEtest@example.com" />
 
-    <ProductStoreEmailSetting productStoreId="9000" emailType="SUB_CONT_LIST_NOTI" bodyScreenLocation="component://ecommerce/widget/EmailContactListScreens.xml#ContactListSubscribeEmail" subject="Subscribe Contact List" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="UNSUB_CONT_LIST_VERI" bodyScreenLocation="component://ecommerce/widget/EmailContactListScreens.xml#ContactListUnsubscribeVerifyEmail" subject="Verify Unsubscribe Contact List" fromAddress="ofbiztest@example.com"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="UNSUB_CONT_LIST_NOTI" bodyScreenLocation="component://ecommerce/widget/EmailContactListScreens.xml#ContactListUnsubscribeEmail" subject="Unsubscribe Contact List" fromAddress="ofbiztest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="SUB_CONT_LIST_NOTI" bodyScreenLocation="component://ecommerce/widget/EmailContactListScreens.xml#ContactListSubscribeEmail" subject="Subscribe Contact List" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="UNSUB_CONT_LIST_VERI" bodyScreenLocation="component://ecommerce/widget/EmailContactListScreens.xml#ContactListUnsubscribeVerifyEmail" subject="Verify Unsubscribe Contact List" fromAddress="APOGEEtest@example.com"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="UNSUB_CONT_LIST_NOTI" bodyScreenLocation="component://ecommerce/widget/EmailContactListScreens.xml#ContactListUnsubscribeEmail" subject="Unsubscribe Contact List" fromAddress="APOGEEtest@example.com"/>
     <ProductStoreEmailSetting productStoreId="9000" emailType="CONT_EMAIL_TEMPLATE" bodyScreenLocation="component://ecommerce/widget/EmailContactListScreens.xml#ContactListEmailTemplate"/>
 
     <WebAnalyticsConfig webSiteId="WebStore" webAnalyticsTypeId="GOOGLE_ANALYTICS" webAnalyticsCode="//--  enter here your analytic script code --"/>
@@ -499,7 +499,7 @@ under the License.
 
     <!-- Product productId="GZ-1000" productTypeId="FINISHED_GOOD" primaryProductCategoryId="101" productName="Tiny Gizmo" internalName="Tiny Gizmo" description="The smallest gizmo in town." longDescription="This gizmo is very small and runs on solar power." taxable="Y" chargeShipping="Y" autoCreateKeywords="Y" isVirtual="N" isVariant="N" createdDate="2001-05-13 12:00:00.0" createdByUserLogin="admin" lastModifiedDate="2001-05-13 12:00:00.0" lastModifiedByUserLogin="admin"/> same now in OrderQuoteDemoData.xml -->
     <Product productId="GZ-1001" productTypeId="FINISHED_GOOD" primaryProductCategoryId="101" productName="Nan Gizmo" internalName="Nan Gizmo" description="Indian style Nan gizmo" taxable="Y" chargeShipping="Y" autoCreateKeywords="Y" isVirtual="N" isVariant="N" createdDate="2001-05-13 12:00:00.0" createdByUserLogin="admin" lastModifiedDate="2001-05-13 12:00:00.0" lastModifiedByUserLogin="admin"/>
-    <Product productId="GZ-1004" productTypeId="FINISHED_GOOD" primaryProductCategoryId="102" productName="Rainbow Gizmo" internalName="Rainbow Gizmo" description="The only multi-colored gizmo" longDescription="This is the original multi-colored gizmo, only available from OFBiz!" taxable="Y" chargeShipping="Y" autoCreateKeywords="Y" isVirtual="N" isVariant="N" createdDate="2001-05-13 12:00:00.0" createdByUserLogin="admin" lastModifiedDate="2001-05-13 12:00:00.0" lastModifiedByUserLogin="admin"/>
+    <Product productId="GZ-1004" productTypeId="FINISHED_GOOD" primaryProductCategoryId="102" productName="Rainbow Gizmo" internalName="Rainbow Gizmo" description="The only multi-colored gizmo" longDescription="This is the original multi-colored gizmo, only available from APOGEE!" taxable="Y" chargeShipping="Y" autoCreateKeywords="Y" isVirtual="N" isVariant="N" createdDate="2001-05-13 12:00:00.0" createdByUserLogin="admin" lastModifiedDate="2001-05-13 12:00:00.0" lastModifiedByUserLogin="admin"/>
     <Product productId="GZ-1005" productTypeId="FINISHED_GOOD" primaryProductCategoryId="102" productName=".NIT Gizmo" internalName=".NIT Gizmo" description="M$ .NIT gizmo" taxable="Y" chargeShipping="Y" autoCreateKeywords="Y" isVirtual="N" isVariant="N" createdDate="2001-05-13 12:00:00.0" createdByUserLogin="admin" lastModifiedDate="2001-05-13 12:00:00.0" lastModifiedByUserLogin="admin">
         <longDescription><![CDATA[This gizmo only works in certain areas and requires a lot of extra space to move around.<br/><br/>It is not recommended for mission critical applications or those with a low tolerance for pain and frustration.]]></longDescription>
     </Product>
@@ -797,7 +797,7 @@ under the License.
     <DataResource dataResourceTypeId="ELECTRONIC_TEXT" dataResourceId="DRGZ-DIG-ALTEN" localeString="en_US"/>
     <ElectronicText dataResourceId="GZ-DIG-ALT" textData="digital-gizmo"/>
     <ElectronicText dataResourceId="DRGZ-DIG-ALTEN" textData="digital-gizmo"/>
-    <Content contentId="GZ-DIG" contentTypeId="DOCUMENT" dataResourceId="GZ-DIG" mimeTypeId="image/gif" contentName="ofbiz_logo.gif" description="Image of Digital Gizmo (actually the OFBiz logo)"/>
+    <Content contentId="GZ-DIG" contentTypeId="DOCUMENT" dataResourceId="GZ-DIG" mimeTypeId="image/gif" contentName="ofbiz_logo.gif" description="Image of Digital Gizmo (actually the APOGEE logo)"/>
     <Content contentId="GZ-DIG-ALT" contentTypeId="DOCUMENT" dataResourceId="GZ-DIG-ALT" localeString="en"/>
     <Content contentId="CGZ-DIG-ALTEN" contentTypeId="DOCUMENT" dataResourceId="DRGZ-DIG-ALTEN" localeString="en_US"/>
     <ContentAssoc contentId="GZ-DIG-ALT" contentIdTo="CGZ-DIG-ALTEN" contentAssocTypeId="ALTERNATE_LOCALE" fromDate="2011-04-26 12:00:00.0"/>
@@ -2230,7 +2230,7 @@ under the License.
     <TelecomNumber contactMechId="9020" areaCode="801" contactNumber="555-5555"/>
     <PartyContactMech partyId="DemoCustCompany" contactMechId="9020" fromDate="2001-05-13 00:00:00.000" allowSolicitation="Y"/>
     <PartyContactMechPurpose partyId="DemoCustCompany" contactMechId="9020" contactMechPurposeTypeId="PHONE_WORK" fromDate="2001-05-13 00:00:00.000"/>
-    <ContactMech contactMechId="9021" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="9021" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PartyContactMech partyId="DemoCustCompany" contactMechId="9021" fromDate="2001-05-13 00:00:00.000" allowSolicitation="Y"/>
     <PartyContactMechPurpose partyId="DemoCustCompany" contactMechId="9021" contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2001-05-13 00:00:00.000"/>
 
@@ -2257,7 +2257,7 @@ under the License.
     <TelecomNumber contactMechId="9022" areaCode="801" contactNumber="555-5555"/>
     <PartyContactMech partyId="DemoCustAgent" contactMechId="9022" fromDate="2001-05-13 00:00:00.000" allowSolicitation="Y"/>
     <PartyContactMechPurpose partyId="DemoCustAgent" contactMechId="9022" contactMechPurposeTypeId="PHONE_WORK" fromDate="2001-05-13 00:00:00.000"/>
-    <ContactMech contactMechId="9023" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="9023" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PartyContactMech partyId="DemoCustAgent" contactMechId="9023" fromDate="2001-05-13 00:00:00.000" allowSolicitation="Y"/>
     <PartyContactMechPurpose partyId="DemoCustAgent" contactMechId="9023" contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2001-05-13 00:00:00.000"/>
 
@@ -2292,7 +2292,7 @@ under the License.
     <PartyContactMechPurpose partyId="DemoCustomer" contactMechId="9025" contactMechPurposeTypeId="PHONE_HOME" fromDate="2001-05-13 00:00:00.000"/>
     <PartyContactMechPurpose partyId="DemoCustomer" contactMechId="9025" contactMechPurposeTypeId="PHONE_SHIPPING" fromDate="2001-05-13 00:00:00.000"/>
     <PartyContactMechPurpose partyId="DemoCustomer" contactMechId="9027" contactMechPurposeTypeId="PHONE_BILLING" fromDate="2001-05-13 00:00:00.000"/>
-    <ContactMech contactMechId="9026" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="9026" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PartyContactMech partyId="DemoCustomer" contactMechId="9026" fromDate="2001-05-13 00:00:00.000" allowSolicitation="Y"/>
     <PartyContactMechPurpose partyId="DemoCustomer" contactMechId="9026" contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2001-05-13 00:00:00.000"/>
 
@@ -2320,7 +2320,7 @@ under the License.
     <PartyContactMechPurpose partyId="EuroCustomer" contactMechId="EUROCUSTOMER" contactMechPurposeTypeId="BILLING_LOCATION" fromDate="2001-05-13 00:00:00.000"/>
     <PartyContactMechPurpose partyId="EuroCustomer" contactMechId="EUROCUSTOMER" contactMechPurposeTypeId="SHIPPING_LOCATION" fromDate="2001-05-13 00:00:00.000"/>
     <PartyContactMechPurpose partyId="EuroCustomer" contactMechId="EUROCUSTOMER" contactMechPurposeTypeId="GENERAL_LOCATION" fromDate="2001-05-13 00:00:00.000"/>
-    <ContactMech contactMechId="EURO01" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="EURO01" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PartyContactMech partyId="EuroCustomer" contactMechId="EURO01" fromDate="2001-05-13 00:00:00.000" allowSolicitation="Y"/>
     <PartyContactMechPurpose partyId="EuroCustomer" contactMechId="EURO01" contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2001-05-13 00:00:00.000"/>
 
@@ -2347,7 +2347,7 @@ under the License.
     <PartyContactMechPurpose partyId="FrenchCustomer" contactMechId="FRENCHCUSTOMER" contactMechPurposeTypeId="BILLING_LOCATION" fromDate="2009-01-09 00:00:00.000"/>
     <PartyContactMechPurpose partyId="FrenchCustomer" contactMechId="FRENCHCUSTOMER" contactMechPurposeTypeId="SHIPPING_LOCATION" fromDate="2009-01-09 00:00:00.000"/>
     <PartyContactMechPurpose partyId="FrenchCustomer" contactMechId="FRENCHCUSTOMER" contactMechPurposeTypeId="GENERAL_LOCATION" fromDate="2009-01-09 00:00:00.000"/>
-    <ContactMech contactMechId="FRA01" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="FRA01" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PartyContactMech partyId="FrenchCustomer" contactMechId="FRA01" fromDate="2009-01-09 00:00:00.000" allowSolicitation="Y"/>
     <PartyContactMechPurpose partyId="FrenchCustomer" contactMechId="FRA01" contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2009-01-09 00:00:00.000"/>
 

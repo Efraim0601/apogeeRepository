@@ -26,8 +26,8 @@ under the License.
     <ProductCategory productCategoryId="CATALOG1_BEST_SELL" productCategoryTypeId="BEST_SELL_CATEGORY" categoryName="Demo Best Selling"/>
     <ProdCatalogCategory prodCatalogId="DemoCatalog" productCategoryId="CATALOG1_BEST_SELL" fromDate="2010-01-01 12:00:00.0" sequenceNum="1" prodCatalogCategoryTypeId="PCCT_BEST_SELL"/>
 
-    <ProductStore productStoreId="9000" storeName="OFBiz Ebay Store1-AU" companyName="Apache Ofbiz" title="Test OFBiz store1"/>
-    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_CONFIRM" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderConfirmNotice" xslfoAttachScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderConfirmNoticePdf" subject="OFBiz Demo - Order Confirmation #${orderId}" bccAddress="ofbiztest@example.com" fromAddress="ofbiztest@example.com"/>
+    <ProductStore productStoreId="9000" storeName="APOGEE Ebay Store1-AU" companyName="Apache APOGEE" title="Test APOGEE store1"/>
+    <ProductStoreEmailSetting productStoreId="9000" emailType="PRDS_ODR_CONFIRM" bodyScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderConfirmNotice" xslfoAttachScreenLocation="component://ecommerce/widget/EmailOrderScreens.xml#OrderConfirmNoticePdf" subject="APOGEE Demo - Order Confirmation #${orderId}" bccAddress="APOGEEtest@example.com" fromAddress="APOGEEtest@example.com"/>
 
     <!--Demo data for a sales order -->
     <OrderHeader orderId="TEST_DEMO10090" orderTypeId="SALES_ORDER" salesChannelEnumId="WEB_SALES_CHANNEL" orderDate="2008-04-23 16:49:27.392" entryDate="2008-04-23 16:49:27.392" priority="2" visitId="10002" statusId="ORDER_APPROVED" currencyUom="USD" productStoreId="9000" remainingSubTotal="38.40" grandTotal="50.85"  invoicePerShipment="Y" webSiteId="WebStore"/>

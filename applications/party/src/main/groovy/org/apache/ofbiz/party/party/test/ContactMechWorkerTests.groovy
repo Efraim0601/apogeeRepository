@@ -62,7 +62,7 @@ class ContactMechWorkerTests extends OFBizTestCase {
                     case '9126':
                     foundEmailAddress = true
                     assert partyContactMechValueMap.contactMech.contactMechTypeId == 'EMAIL_ADDRESS'
-                    assert partyContactMechValueMap.contactMech.infoString == 'ofbiztest@foo.com'
+                    assert partyContactMechValueMap.contactMech.infoString == 'APOGEEtest@foo.com'
                     assert partyContactMechValueMap.partyContactMech
                     assert partyContactMechValueMap.contactMechType
                     assert partyContactMechValueMap.partyContactMechPurposes
@@ -126,7 +126,7 @@ class ContactMechWorkerTests extends OFBizTestCase {
                     break
                 case '9026':
                     assert orderContactMechValueMap.contactMech.contactMechTypeId == 'EMAIL_ADDRESS'
-                    assert orderContactMechValueMap.contactMech.infoString == 'ofbiztest@example.com'
+                    assert orderContactMechValueMap.contactMech.infoString == 'APOGEEtest@example.com'
                     assert orderContactMechValueMap.orderContactMech
                     assert orderContactMechValueMap.contactMechType
                     foundOrderEmail = orderContactMechValueMap.contactMechPurposeType.contactMechPurposeTypeId == 'ORDER_EMAIL'
@@ -158,7 +158,7 @@ class ContactMechWorkerTests extends OFBizTestCase {
                     break
                 case '9126':
                     assert workEffortContactMechValueMap.contactMech.contactMechTypeId == 'EMAIL_ADDRESS'
-                    assert workEffortContactMechValueMap.contactMech.infoString == 'ofbiztest@foo.com'
+                    assert workEffortContactMechValueMap.contactMech.infoString == 'APOGEEtest@foo.com'
                     assert workEffortContactMechValueMap.workEffortContactMech
                     assert workEffortContactMechValueMap.contactMechType
                     foundEmail = true

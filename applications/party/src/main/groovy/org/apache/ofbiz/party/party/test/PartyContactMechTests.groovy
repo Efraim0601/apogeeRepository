@@ -33,7 +33,7 @@ class PartyContactMechTests extends OFBizTestCase {
     void testUpdatePartyEmailAddress() {
         String partyId = 'DemoCustomer'
         String contactMechTypeId = 'EMAIL_ADDRESS'
-        String emailAddress = 'ofbiztest@example.com'
+        String emailAddress = 'APOGEEtest@example.com'
 
         // first try with just updating without changing the email address
         Map serviceCtx = [
@@ -57,7 +57,7 @@ class PartyContactMechTests extends OFBizTestCase {
 
         // now update with changing the email address, a new record will be created in ContactMech entity this time
         serviceResult.clear()
-        serviceCtx.emailAddress = 'ofbiz-test@example.com'
+        serviceCtx.emailAddress = 'APOGEE-test@example.com'
         serviceResult = dispatcher.runSync('updatePartyEmailAddress', serviceCtx)
         assert ServiceUtil.isSuccess(serviceResult)
         String newContactMechId = serviceResult.contactMechId

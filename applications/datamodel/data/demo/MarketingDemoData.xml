@@ -38,7 +38,7 @@ under the License.
     <SecurityGroupPermission fromDate="2001-05-13 12:00:00.0" groupId="BIZADMIN" permissionId="SFA_ADMIN"/>
 
     <!-- SFA System Property Data -->
-    <SystemProperty systemResourceId="sfa" systemPropertyId="save.outgoing.directory" description="If the save.outgoing.directory is specified the file will be saved there, else it will be saved under OFBIZ_HOME"/>
+    <SystemProperty systemResourceId="sfa" systemPropertyId="save.outgoing.directory" description="If the save.outgoing.directory is specified the file will be saved there, else it will be saved under APOGEE_HOME"/>
 
     <!-- SFA Demo Data -->
     <!-- demo accounts -->
@@ -49,7 +49,7 @@ under the License.
     <PartyStatus partyId="sfa100" statusId="PARTY_ENABLED" statusDate="2001-01-01 12:00:00.0"/>
     <ContactMech contactMechId="sfa100" contactMechTypeId="POSTAL_ADDRESS"/>
     <ContactMech contactMechId="sfa101" contactMechTypeId="TELECOM_NUMBER"/>
-    <ContactMech contactMechId="sfa102" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="sfa102" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PostalAddress contactMechId="sfa100" address1="151 Madison street." city="Edison" postalCode="32451" countryGeoId="USA" stateProvinceGeoId="CA"/>
     <TelecomNumber contactMechId="sfa101" countryCode="1" areaCode="33" contactNumber="12456"/>
     <PartyContactMech partyId="sfa100" contactMechId="sfa100" fromDate="2000-01-01 00:00:00.000"/>
@@ -107,7 +107,7 @@ under the License.
     <PartyRelationship partyIdFrom="sfa102" roleTypeIdFrom="ACCOUNT_LEAD" partyIdTo="sfa101" roleTypeIdTo="LEAD" fromDate="2000-01-01 00:00:00.000" partyRelationshipTypeId="EMPLOYMENT"/>
     <!-- owner to lead relationship -->
     <PartyRelationship partyIdFrom="DemoLeadOwner" roleTypeIdFrom="OWNER" partyIdTo="sfa101" roleTypeIdTo="LEAD" fromDate="2000-01-01 00:00:00.000" partyRelationshipTypeId="LEAD_OWNER"/>
-    <ContactMech contactMechId="sfa103" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztestLead@example.com"/>
+    <ContactMech contactMechId="sfa103" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtestLead@example.com"/>
     <PartyContactMech partyId="sfa101" contactMechId="sfa103" fromDate="2000-01-01 00:00:00.000"/>
     <PartyContactMechPurpose partyId="sfa101" contactMechId="sfa103" contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2000-01-01 00:00:00.000"/>
     <!-- Status Valid Change   -->
@@ -191,11 +191,11 @@ under the License.
 
     <ContactList contactListId="9000" contactListTypeId="ANNOUNCEMENT" contactMechTypeId="EMAIL_ADDRESS" marketingCampaignId="9000"
         contactListName="New Product Announcements" description="New Product Announcements Mailing List (email)" comments="" isPublic="Y" ownerPartyId="Company"
-        verifyEmailFrom="ofbiztest@example.com" verifyEmailScreen="component://ecommerce/widget/EmailContactListScreens.xml#ContactListVerifyEmail"
+        verifyEmailFrom="APOGEEtest@example.com" verifyEmailScreen="component://ecommerce/widget/EmailContactListScreens.xml#ContactListVerifyEmail"
         verifyEmailSubject="Subscription Verify Email" verifyEmailWebSiteId="WebStore"/>
     <ContactList contactListId="9010" contactListTypeId="NEWSLETTER" contactMechTypeId="EMAIL_ADDRESS" marketingCampaignId="9000"
         contactListName="Product Tips Newsletter" description="Product Tips Newsletter Mailing List (email)" comments="" isPublic="Y" ownerPartyId="Company"
-        verifyEmailFrom="ofbiztest@example.com" verifyEmailScreen="component://ecommerce/widget/EmailContactListScreens.xml#ContactListVerifyEmail"
+        verifyEmailFrom="APOGEEtest@example.com" verifyEmailScreen="component://ecommerce/widget/EmailContactListScreens.xml#ContactListVerifyEmail"
         verifyEmailSubject="Subscription Verify Email" verifyEmailWebSiteId="WebStore"/>
 
     <ContactListParty contactListId="9000" partyId="DemoCustCompany" preferredContactMechId="9021" statusId="CLPT_ACCEPTED" fromDate="2001-05-13 00:00:00"/>

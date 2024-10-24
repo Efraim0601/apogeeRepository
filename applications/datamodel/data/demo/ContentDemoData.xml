@@ -70,19 +70,19 @@ under the License.
     <PartyRole partyId="BLOG_EDITOR" roleTypeId="_NA_"/>
     <PartyStatus partyId="BLOG_EDITOR" statusId="PARTY_ENABLED" statusDate="2001-01-01 12:00:00.0"/>
 
-    <ContactMech contactMechId="ADMIN_CONTACT" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="ADMIN_CONTACT" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PartyContactMech partyId="BLOG_ADMIN" contactMechId="ADMIN_CONTACT" fromDate="2001-05-13 12:00:00.0"/>
     <PartyContactMechPurpose partyId="BLOG_ADMIN" contactMechId="ADMIN_CONTACT" contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2001-05-13 12:00:00.0"/>
 
-    <ContactMech contactMechId="AUTHOR_CONTACT" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="AUTHOR_CONTACT" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PartyContactMech partyId="BLOG_AUTHOR" contactMechId="AUTHOR_CONTACT" fromDate="2001-05-13 12:00:00.0"/>
     <PartyContactMechPurpose partyId="BLOG_AUTHOR" contactMechId="AUTHOR_CONTACT" contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2001-05-13 12:00:00.0"/>
 
-    <ContactMech contactMechId="EDITOR_CONTACT" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="EDITOR_CONTACT" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PartyContactMech partyId="BLOG_EDITOR" contactMechId="EDITOR_CONTACT" fromDate="2001-05-13 12:00:00.0"/>
     <PartyContactMechPurpose partyId="BLOG_EDITOR" contactMechId="EDITOR_CONTACT" contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2001-05-13 12:00:00.0"/>
 
-    <ContactMech contactMechId="GUEST_CONTACT" contactMechTypeId="EMAIL_ADDRESS" infoString="ofbiztest@example.com"/>
+    <ContactMech contactMechId="GUEST_CONTACT" contactMechTypeId="EMAIL_ADDRESS" infoString="APOGEEtest@example.com"/>
     <PartyContactMech partyId="BLOG_GUEST" contactMechId="GUEST_CONTACT" fromDate="2001-05-13 12:00:00.0"/>
     <PartyContactMechPurpose partyId="BLOG_GUEST" contactMechId="GUEST_CONTACT" contactMechPurposeTypeId="PRIMARY_EMAIL" fromDate="2001-05-13 12:00:00.0"/>
 
@@ -251,7 +251,7 @@ This is an example of a complex blog entry that uses the screen widgets to combi
 
 
 
-If you want to see what the editing environment look like, log in as "bigal/ofbiz".
+If you want to see what the editing environment look like, log in as "bigal/APOGEE".
 
 ]]></textData>
 
@@ -301,7 +301,7 @@ If you want to see what the editing environment look like, log in as "bigal/ofbi
 
 <p/>
 
-David won't like it. He will probably delete this seed data from the DB, but it is not really about him. He gave up his right to privacy when he chose to pursue the glamorous life of an open source software developer. We could choose someone else, but no one else knows enough about OFBiz to do the interviews.]]></textData>
+David won't like it. He will probably delete this seed data from the DB, but it is not really about him. He gave up his right to privacy when he chose to pursue the glamorous life of an open source software developer. We could choose someone else, but no one else knows enough about APOGEE to do the interviews.]]></textData>
 
     </ElectronicText>
 

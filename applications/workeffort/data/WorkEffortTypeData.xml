@@ -72,6 +72,6 @@ under the License.
     <WorkEffortType description="Project Phase" hasTable="N" workEffortTypeId="PHASE"/>
 
     <!-- WorkEffort Email Template Settings -->
-    <EmailTemplateSetting emailTemplateSettingId="WEFF_EVENT_REMINDER" fromAddress="ofbiztest@example.com" subject="Event Reminder"
+    <EmailTemplateSetting emailTemplateSettingId="WEFF_EVENT_REMINDER" fromAddress="APOGEEtest@example.com" subject="Event Reminder"
             bodyScreenLocation="component://workeffort/widget/WorkEffortScreens.xml#WorkEffortEventReminderEmail"/>
 </entity-engine-xml>
